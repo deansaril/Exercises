@@ -9,19 +9,19 @@ public class TestDrawX {
     @Test
     public void testDrawXWithSize3()
     {
-        String expectedStar = """
+        String expectedDrawing = """
                 * *
                  *\s
                 * *
                 """;
 
-        assertEquals(expectedStar, DrawX.drawX(3));
+        assertEquals(expectedDrawing, DrawX.drawX(3));
     }
 
     @Test
     public void testDrawXWithSize5()
     {
-        String expectedStar = """
+        String expectedDrawing = """
                 *   *
                  * *\s
                   * \s
@@ -29,13 +29,13 @@ public class TestDrawX {
                 *   * 
                 """;
 
-        assertEquals(expectedStar, DrawX.drawX(5));
+        assertEquals(expectedDrawing, DrawX.drawX(5));
     }
 
     @Test
     public void testDrawXWithSize7()
     {
-        String expectedStar = """
+        String expectedDrawing = """
                 *     *
                  *   *\s
                   * * \s
@@ -45,7 +45,7 @@ public class TestDrawX {
                 *     * 
                 """;
 
-        assertEquals(expectedStar, DrawX.drawX(7));
+        assertEquals(expectedDrawing, DrawX.drawX(7));
     }
 
 }
